@@ -43,7 +43,7 @@ const getAiClient = () => new GoogleGenAI({ apiKey: process.env.API_KEY });
 const getBackgroundStylePrompt = (style: string): string => {
       switch (style) {
         case 'Christmas':
-          return "a festive 'Christmas' theme. The background should be filled with classic Christmas elements like twinkling lights, shiny baubles, elegant ribbons, and perhaps a hint of snowflakes or a cozy fireplace scene. The color palette should be rich with reds, greens, golds, and whites. The overall mood should be joyful, celebratory, and magical.";
+          return "a professional and elegant 'Christmas' theme. The background should be artistic and subtle, featuring soft-focus elements like tasteful bokeh lights, a hint of evergreen texture, or abstract golden highlights. Avoid clutter and busy patterns. The color palette should be a sophisticated mix of deep forest green, rich burgundy, and muted gold, creating a luxurious and festive feel. Crucially, the background must be designed to be clear and not distracting, with plenty of clean space or soft-focus areas to ensure that text, logos, and the main presenter are highly legible and stand out. The overall mood should be sophisticated and festive, not overly bright or busy.";
         case 'Neon Glow':
           return "a 'Neon Glow' theme. The background should be dark, featuring vibrant, glowing neon lines, shapes, and light effects that outline a dance scene. Think futuristic nightclub, with glowing grids on the floor, neon signs (without text), and light trails that convey movement and energy. The color palette should be electric pinks, blues, cyans, and purples against a deep black or dark blue base.";
         case 'Abstract Watercolor':
